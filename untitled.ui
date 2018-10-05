@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>652</width>
+    <height>468</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>652</width>
+    <height>468</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>652</width>
+    <height>468</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>小说下载器</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="a.qrc">
+    <normaloff>:/pic/python.ico</normaloff>
+    <normalon>:/pic/python.ico</normalon>
+    <disabledoff>:/pic/python.ico</disabledoff>
+    <disabledon>:/pic/python.ico</disabledon>
+    <activeoff>:/pic/python.ico</activeoff>
+    <activeon>:/pic/python.ico</activeon>
+    <selectedoff>:/pic/python.ico</selectedoff>
+    <selectedon>:/pic/python.ico</selectedon>:/pic/python.ico</iconset>
+  </property>
+  <property name="accessibleName">
+   <string/>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>128</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>下载进度：</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+   <property name="margin">
+    <number>1</number>
+   </property>
+   <property name="indent">
+    <number>-1</number>
+   </property>
+   <property name="openExternalLinks">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>40</y>
+     <width>91</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开始下载</string>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>120</y>
+     <width>531</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>90</y>
+     <width>68</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>下载小说：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>90</y>
+     <width>421</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>未选择</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>170</y>
+     <width>241</width>
+     <height>281</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>391</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>请输入小说名</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>40</y>
+     <width>85</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>搜索</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>371</width>
+     <height>281</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>115</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>按小说名搜</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_2">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>10</y>
+     <width>115</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>按作者搜</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>10</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit_2</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>listWidget_2</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>listWidget</tabstop>
+ </tabstops>
+ <resources>
+  <include location="a.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>work()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>570</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>451</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>search()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>451</x>
+     <y>26</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>620</x>
+     <y>38</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>zz_search()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>14</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>235</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>xs_search()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>67</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>120</x>
+     <y>75</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>work()</slot>
+  <slot>check()</slot>
+  <slot>search()</slot>
+  <slot>zz_search()</slot>
+  <slot>xs_search()</slot>
+ </slots>
+</ui>

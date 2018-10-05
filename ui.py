@@ -1,0 +1,95 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'untitled.ui'
+#
+# Created by: PyQt5 UI code generator 5.10.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.setEnabled(True)
+        Form.resize(652, 468)
+        Form.setMinimumSize(QtCore.QSize(652, 468))
+        Form.setMaximumSize(QtCore.QSize(652, 468))
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/pic/python.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(":/pic/python.ico"), QtGui.QIcon.Normal, QtGui.QIcon.On)
+        icon.addPixmap(QtGui.QPixmap(":/pic/python.ico"), QtGui.QIcon.Disabled, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(":/pic/python.ico"), QtGui.QIcon.Disabled, QtGui.QIcon.On)
+        icon.addPixmap(QtGui.QPixmap(":/pic/python.ico"), QtGui.QIcon.Active, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(":/pic/python.ico"), QtGui.QIcon.Active, QtGui.QIcon.On)
+        icon.addPixmap(QtGui.QPixmap(":/pic/python.ico"), QtGui.QIcon.Selected, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(":/pic/python.ico"), QtGui.QIcon.Selected, QtGui.QIcon.On)
+        Form.setWindowIcon(icon)
+        Form.setAccessibleName("")
+        self.label = QtWidgets.QLabel(Form)
+        self.label.setGeometry(QtCore.QRect(20, 128, 81, 21))
+        self.label.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.label.setWordWrap(True)
+        self.label.setIndent(-1)
+        self.label.setOpenExternalLinks(False)
+        self.label.setObjectName("label")
+        self.pushButton = QtWidgets.QPushButton(Form)
+        self.pushButton.setGeometry(QtCore.QRect(530, 40, 91, 28))
+        self.pushButton.setObjectName("pushButton")
+        self.progressBar = QtWidgets.QProgressBar(Form)
+        self.progressBar.setGeometry(QtCore.QRect(100, 120, 531, 31))
+        self.progressBar.setProperty("value", 0)
+        self.progressBar.setObjectName("progressBar")
+        self.label_2 = QtWidgets.QLabel(Form)
+        self.label_2.setGeometry(QtCore.QRect(20, 90, 68, 20))
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(Form)
+        self.label_3.setGeometry(QtCore.QRect(100, 90, 421, 20))
+        self.label_3.setObjectName("label_3")
+        self.listWidget = QtWidgets.QListWidget(Form)
+        self.listWidget.setGeometry(QtCore.QRect(400, 170, 241, 281))
+        self.listWidget.setObjectName("listWidget")
+        self.lineEdit_2 = QtWidgets.QLineEdit(Form)
+        self.lineEdit_2.setGeometry(QtCore.QRect(20, 40, 391, 31))
+        self.lineEdit_2.setObjectName("lineEdit_2")
+        self.pushButton_3 = QtWidgets.QPushButton(Form)
+        self.pushButton_3.setGeometry(QtCore.QRect(430, 40, 85, 27))
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.listWidget_2 = QtWidgets.QListWidget(Form)
+        self.listWidget_2.setGeometry(QtCore.QRect(10, 170, 371, 281))
+        self.listWidget_2.setObjectName("listWidget_2")
+        self.radioButton = QtWidgets.QRadioButton(Form)
+        self.radioButton.setGeometry(QtCore.QRect(20, 10, 115, 19))
+        self.radioButton.setObjectName("radioButton")
+        self.radioButton_2 = QtWidgets.QRadioButton(Form)
+        self.radioButton_2.setGeometry(QtCore.QRect(160, 10, 115, 19))
+        self.radioButton_2.setObjectName("radioButton_2")
+        self.label_4 = QtWidgets.QLabel(Form)
+        self.label_4.setGeometry(QtCore.QRect(480, 10, 151, 21))
+        self.label_4.setText("")
+        self.label_4.setObjectName("label_4")
+
+        self.retranslateUi(Form)
+        self.pushButton.clicked.connect(Form.work)
+        self.pushButton_3.clicked.connect(Form.search)
+        self.radioButton_2.clicked.connect(Form.zz_search)
+        self.radioButton.clicked.connect(Form.xs_search)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+        Form.setTabOrder(self.lineEdit_2, self.pushButton_3)
+        Form.setTabOrder(self.pushButton_3, self.listWidget_2)
+        Form.setTabOrder(self.listWidget_2, self.pushButton)
+        Form.setTabOrder(self.pushButton, self.listWidget)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "小说下载器"))
+        self.label.setText(_translate("Form", "下载进度："))
+        self.pushButton.setText(_translate("Form", "开始下载"))
+        self.label_2.setText(_translate("Form", "下载小说："))
+        self.label_3.setText(_translate("Form", "未选择"))
+        self.lineEdit_2.setPlaceholderText(_translate("Form", "请输入小说名"))
+        self.pushButton_3.setText(_translate("Form", "搜索"))
+        self.radioButton.setText(_translate("Form", "按小说名搜"))
+        self.radioButton_2.setText(_translate("Form", "按作者搜"))
+
+import a_rc
